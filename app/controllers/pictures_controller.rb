@@ -5,7 +5,7 @@ class PicturesController < ApplicationController
   end
 
   def show
-    @picture = Picture.find(params[:id])
+    kk
   end
 
   def new
