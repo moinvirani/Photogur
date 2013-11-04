@@ -5,7 +5,7 @@ class PicturesController < ApplicationController
   end
 
   def show
-    kk
+    @picture = Picture.find(params[:id])
   end
 
   def new
@@ -19,6 +19,12 @@ class PicturesController < ApplicationController
     else 
       render :new
     end
+  end
+
+  def destroy
+    @picture = Picture.find(params[:id])
+    @picture.destroy
+    redirect_to pictures_url
   end
 
   private

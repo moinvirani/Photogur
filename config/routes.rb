@@ -1,15 +1,7 @@
 Photogur::Application.routes.draw do
-  resources :pictures
+  resources :pictures     # check [rake routes] for prefix/uri pattern
   root 'pictures#index'
 
-  # post 'pictures' => 'pictures#create'        #create
-
-  # get 'pictures' => 'pictures#index'          #read
-  # get  'pictures/new' => 'pictures#new'       #update
-  # get  'pictures/:id/edit' => 'pictures#edit', as: "edit_picture"
-  # get 'pictures/:id' => 'pictures#show', as: "picture"
-
-  
 
 
   # The priority is based upon order of creation: first created -> highest priority.
