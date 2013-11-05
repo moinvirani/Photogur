@@ -1,7 +1,16 @@
-<h1>Pictures</h1>
-<%= link_to "Add New Picture", new_picture_url %>
+<div class="center hero-unit">
+	<h1>Welcome to Bitgram!</h1>
 
-<% @pictures.each do |picture| %>
-<p><%= picture[:title] %>, <%= picture[:artist] %></p>
- <%= link_to image_tag(picture.url), "/pictures/#{picture.id}" %>
-<% end %>
+	<%= link_to "Add New Picture", new_picture_url, class: "btn btn-large btn-primary" %>
+
+</div>
+
+<div>
+	<% @pictures.each do |picture| %>
+			 <%= link_to image_tag(picture.url), "/pictures/#{picture.id}" %>
+			 <p><%= picture[:title] %>, <%= picture[:artist] %></p>
+			<% end %>
+		
+</div>
+
+			
