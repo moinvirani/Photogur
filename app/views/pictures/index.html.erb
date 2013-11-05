@@ -5,12 +5,11 @@
 
 </div>
 
-<div>
+<div class="row">
+<div class= "span6"> 
 	<% @pictures.each do |picture| %>
 			 <%= link_to image_tag(picture.url), "/pictures/#{picture.id}" %>
 			 <p><%= picture[:title] %>, <%= picture[:artist] %></p>
 			<% end %>
-		
 </div>
-
-			
+</div>
