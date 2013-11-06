@@ -7,11 +7,11 @@
 </p>
 
 <%= form_for @picture do |f| %>
-<p>
-    <%= f.label "artist" %><br>
+  <p>
+    <%= f.label "artist"  %> <br>
     <%= f.text_field "artist" %>
   </p>
-  <p>
+   <p>
     <%= f.label "title" %><br>
     <%= f.text_field "title" %>
   </p>
@@ -20,6 +20,6 @@
     <%= f.text_field "url" %>
   </p>
   <p>
-    <%= submit_tag "Save" %>
+    <%= f.submit "Save" %> 
   </p>
 <% end %>

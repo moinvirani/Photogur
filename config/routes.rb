@@ -1,4 +1,5 @@
 Photogur::Application.routes.draw do
+  get "users/new"
   resources :pictures     # check [rake routes] for prefix/uri pattern
   root 'pictures#index'
 
