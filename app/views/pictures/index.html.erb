@@ -1,15 +1,21 @@
-<div class="center hero-unit">
+<div class="jumbotron">
 	<h1>Welcome to Bitgram!</h1>
+	<h2>Capture and Share the World's Moments</h2>
+	<div class="center">
+	<%= link_to "Add New Picture", new_picture_url, class: "demo-pricing demo-pricing-2" %>
+	</div>
+</div>
+	
 
-	<%= link_to "Add New Picture", new_picture_url, class: "btn btn-large btn-primary" %>
-
+<div class="wrapper" >
+		<% @pictures.each do |picture| %>
+			<div class="pin">
+				<%= link_to image_tag(picture.url), "/pictures/#{picture.id}" %>
+				<p>Title: <%= picture[:title] %> | By: <%= picture[:artist] %></p>
+			</div>
+		<% end %>
 </div>
 
-<div class="row">
-<div class= "span6"> 
-	<% @pictures.each do |picture| %>
-			 <%= link_to image_tag(picture.url), "/pictures/#{picture.id}" %>
-			 <p><%= picture[:title] %>, <%= picture[:artist] %></p>
-			<% end %>
-</div>
-</div>
+	
+
+

@@ -10,7 +10,9 @@ html {
   overflow-y: scroll;
 }
 
+
 body {
+  background-color: #f2f2f2;
   padding-top: 60px;
 }
 
@@ -23,6 +25,7 @@ textarea {
 }
 
 .center {
+  padding-top: 1px;
   text-align: center;
   h1 {
     margin-bottom: 10px;
@@ -35,21 +38,42 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 1;
 }
 
-h1 {
-  font-size: 3em;
-  letter-spacing: -2px;
-  margin-bottom: 30px;
-  text-align: center;
-}
 
-h2 {
-  font-size: 1.2em;
-  letter-spacing: -1px;
-  margin-bottom: 30px;
+h1 {
   text-align: center;
   font-weight: normal;
-  color: $grayLight;
+    color: #0d0d0d;
+    margin-bottom: .3em;
+    font-size: 36px;
+    font-weight: 600;
+    margin: 0;
+    padding: 45px 0 0;
+    text-transform: uppercase;
+    text-shadow: 0 0 100px #f9f9f9;
+
+  // font-size: 3em;
+  // letter-spacing: -2px;
+  // margin-bottom: 30px;
+  // text-align: center;
 }
+
+
+h2 {
+  text-align: center;
+   margin-bottom: 20px;
+    color: #0a9268;
+    font-size: 1.8rem;
+    font-weight: 300;
+}
+
+// h2 {
+//   font-size: 1.2em;
+//   letter-spacing: -1px;
+//   margin-bottom: 30px;
+//   text-align: center;
+//   font-weight: normal;
+//   color: $grayLight;
+// }
 
 p {
   font-size: 1.1em;
@@ -74,6 +98,60 @@ p {
     text-decoration: none;
   }
 }
+
+/* CSS for pins  */
+
+
+.myrow {
+  width: 100%;
+  clear: both;
+} 
+
+.wrapper {
+  width: 110%;
+  max-width: 1100px;
+  min-width: 800px;
+  margin: 50px auto;
+}
+
+.pin {
+  float: left;
+  width: 200px;
+  height: 300px;
+  display: inline-block;
+  background: #FEFEFE;
+  border: 2px solid #FAFAFA;
+  box-shadow: 0 1px 2px rgba(34, 25, 25, 0.4);
+  margin: 0 6px 15px;
+  -webkit-column-break-inside: avoid;
+  -moz-column-break-inside: avoid;
+  column-break-inside: avoid;
+  padding: 15px;
+  padding-bottom: 5px;
+  background: -webkit-linear-gradient(45deg, #FFF, #F9F9F9);
+  opacity: 1;
+  
+  -webkit-transition: all .2s ease;
+  -moz-transition: all .2s ease;
+  -o-transition: all .2s ease;
+  transition: all .2s ease;
+}
+
+.pin img {
+  height: 200px;
+  width: 200px;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 15px;
+  margin-bottom: 5px;
+}
+
+.pin p {
+  font: 12px/18px Arial, sans-serif;
+  color: #333;
+  margin: 0;
+}
+
+/* End of CSS for pins  */
 
 
 
@@ -101,4 +179,53 @@ footer {
       margin-left: 10px;
     }
   }
+}
+
+/* button css */
+
+.demo-pricing {
+  margin-top: 10px;
+  margin-right: 10px;
+  padding: 14px 26px;
+  font-size: 14px;
+  line-height: 100%;
+  text-shadow: 0 1px rgba(0, 0, 0, 0.4);
+  color: #fff;
+  display:inline-block;
+  vertical-align: middle;
+  text-align: center;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.1s ease-in-out;
+  -webkit-transition: background 0.1s ease-in-out;
+  -moz-transition: background 0.1s ease-in-out;
+  -ms-transition: background 0.1s ease-in-out;
+  -o-transition: background 0.1s ease-in-out;
+  text-shadow: 0 1px rgba(0, 0, 0, 0.3);
+  color: #fff;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  font-family: 'Helvetica Neue', Helvetica, sans-serif;
+}
+.demo-pricing:active {
+  padding-top: 15px;
+        margin-bottom: -1px;
+}
+.demo-pricing, .demo-pricing:hover, .demo-pricing:active {
+  outline: 0 none;
+  text-decoration: none;
+  color: #fff;
+}
+
+
+.demo-pricing-2 {
+  background-color: #f06060;
+  box-shadow: 0px 3px 0px 0px #cd1313;
+}
+.demo-pricing-2:hover {
+  background-color: #ed4444;
+}
+.demo-pricing-2:active {
+  box-shadow: 0px 1px 0px 0px #cd1313;
 }
